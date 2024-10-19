@@ -7,9 +7,11 @@
     if (!isNaN(num1) && !isNaN(num2)) {
     // Perform the operation
                     let result = multiply(num1, num2);
+                    let result2 = add(num1,num2);
+                    let result3 = divide(result,result2)
 
                     // Display the result
-                    displayResult(result);
+                    displayResult(result3);
                 } else {
                     displayResult('Please enter valid numbers');
                 }
@@ -22,7 +24,14 @@
                 // Multiply the numbers
                 return a * b;
             }
-
+            function add(a,b){
+                debugger;
+                return a+b;
+            }
+            function divide(a,b){
+                debugger;
+                return a/b;
+            }
             function displayResult(result) {
                 // Display the result in the paragraph element
                 const resultElement = document.getElementById('result');
